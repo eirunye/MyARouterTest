@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".mvp.LoginActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本地登录" />
+
 </android.support.constraint.ConstraintLayout>

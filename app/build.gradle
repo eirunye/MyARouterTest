@@ -34,12 +34,12 @@ android {
 
         debug {
             minifyEnabled false
-//            buildConfigField "boolean", "DEBUG", true
+            buildConfigField("boolean", "DEBUG", "true")
         }
 
         release {
             minifyEnabled false
-//            buildConfigField "boolean", "DEBUG", false
+            buildConfigField("boolean", "DEBUG", "false")
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -62,6 +62,6 @@ dependencies {
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     implementation 'com.alibaba:fastjson:1.2.48'
-    implementation project(':main_project')
     implementation 'com.google.code.gson:gson:2.8.5'
+    implementation project(':main_project')
 }

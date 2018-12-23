@@ -106,9 +106,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button9:
 
                 ARouter.getInstance()
-                        .build(ConstantApi.ROUTER_MODULE_PROJECT_DETAIL)
+                        .build(ConstantApi.ROUTER_MODULE_PROJECT_DETAIL) //进入详情页
                         .withString("newsId", "10001")
                         .withString("newsUrl", "file:///android_asset/news.html")
+                        .withTransition(R.anim.slide_in_bottom, R.anim.slide_out_bottom)
                         .navigation();
                 break;
         }

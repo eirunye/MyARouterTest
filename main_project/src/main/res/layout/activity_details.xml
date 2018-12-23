@@ -19,6 +19,11 @@
             android:text="详情信息页面"
             android:textSize="20sp" />
 
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

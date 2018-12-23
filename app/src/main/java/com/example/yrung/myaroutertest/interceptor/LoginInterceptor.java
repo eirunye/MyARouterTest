@@ -27,7 +27,7 @@ public class LoginInterceptor implements IInterceptor {
     public void process(Postcard postcard, InterceptorCallback callback) {
         if (ConstantApi.ROUTER_MODULE_PROJECT_DETAIL.equals(postcard.getPath())) {
 
-            User user = (User) SharedPreferencesUtil.getData("login", new User());
+            User user = (User) SharedPreferencesUtil.getData("Login", new User());
             if (!user.isLogin()) {
                 final AlertDialog.Builder ab = new AlertDialog.Builder(MainActivity.getThis());
                 ab.setCancelable(false);
@@ -36,7 +36,8 @@ public class LoginInterceptor implements IInterceptor {
                 ab.setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        callback.onContinue(postcard);
+//                        callback.onContinue(postcard);  // 处理完成，交还控制权
+                        callback.onInterrupt(new RuntimeException("我觉得有点异常"));      // 觉得有问题，中断路由流程
                     }
                 });
 

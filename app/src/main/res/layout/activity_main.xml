@@ -68,7 +68,7 @@
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="进入详情页面(已经登录!)" />
+                android:text="进入详情页面(判断是否登录!)" />
 
             <Button
                 android:id="@+id/button10"
