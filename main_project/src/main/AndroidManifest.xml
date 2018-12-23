@@ -18,7 +18,9 @@
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme" />
         <activity android:name=".mvp.ModuleParameterActivity" />
-        <activity android:name=".mvp.InterceptorActivity"></activity>
+        <activity android:name=".mvp.InterceptorActivity" />
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".mvp.DetailsActivity"></activity>
     </application>
 
 </manifest>

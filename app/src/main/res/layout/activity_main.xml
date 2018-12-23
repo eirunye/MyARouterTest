@@ -62,13 +62,13 @@
                 android:id="@+id/button8"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="跳转1_URL" />
+                android:text="跳转service" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="跳转1_URL" />
+                android:text="进入详情页面(已经登录!)" />
 
             <Button
                 android:id="@+id/button10"

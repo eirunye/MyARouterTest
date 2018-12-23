@@ -22,6 +22,13 @@ public class ConstantProjectApi {
     //拦截器
     public static final String ROUTER_MODULE_PROJECT_INTERCEPROT = "/module/eirunye/project/intercept";
 
+
+    //详情页面
+    public static final String ROUTER_MODULE_PROJECT_DETAIL = "/module/eirunye/project/detail";
+
+    //进入登录页面
+    public static final String ROUTER_MODULE_PROJECT_LOGIN = "/module/eirunye/project/login";
+
     //页面的名称
 
     public static final String ROUTER_PROJECT_MAIN = "Module";

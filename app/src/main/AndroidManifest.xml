@@ -19,7 +19,9 @@
         </activity>
         <activity android:name=".Test1Activity" />
         <activity android:name=".ParameterActivity" />
-        <activity android:name=".mvp.WebViewActivity"></activity>
+        <activity android:name=".mvp.WebViewActivity" />
+        <activity android:name=".Test4Activity" />
+        <activity android:name=".mvp.LoginActivity"></activity>
     </application>
 
 </manifest>

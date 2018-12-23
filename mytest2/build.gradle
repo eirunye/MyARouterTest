@@ -10,7 +10,7 @@ android {
             storePassword '123456'
         }
     }
-    compileSdkVersion 28
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
     defaultConfig {
         applicationId "com.example.mytest2"
         minSdkVersion 15
@@ -42,6 +42,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:28.+'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
