@@ -51,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
         } else if (i == R.id.button2) {
         } else if (i == R.id.button3) {
         } else if (i == R.id.button4) {
+            ARouter.getInstance()
+                    .build(ConstantProjectApi.ROUTER_TEST_1)
+                    .navigation();
         } else if (i == R.id.button5) {
         }
     }

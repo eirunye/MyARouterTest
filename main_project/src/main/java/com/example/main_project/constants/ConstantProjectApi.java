@@ -29,6 +29,8 @@ public class ConstantProjectApi {
     //进入登录页面
     public static final String ROUTER_MODULE_PROJECT_LOGIN = "/module/eirunye/project/login";
 
+
+    public static final String ROUTER_MODULE_COMMENT_PAGE = "/module/eirunye/project/test5";
     //页面的名称
 
     public static final String ROUTER_PROJECT_MAIN = "Module";

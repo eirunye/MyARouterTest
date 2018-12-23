@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.alibaba.android.arouter.facade.Postcard;
 import com.alibaba.android.arouter.facade.annotation.Interceptor;
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.facade.callback.InterceptorCallback;
 import com.alibaba.android.arouter.facade.template.IInterceptor;
 import com.example.yrung.mytest5_luoyang.MainActivity;
@@ -49,7 +50,8 @@ public class Test1Interceptor implements IInterceptor {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     postcard.withString("extra", "我是在拦截器中附加的参数");
-                    callback.onInterrupt(null);
+                    Log.e(TAG, "lllll");
+                    callback.onContinue(postcard);
                 }
             });
 

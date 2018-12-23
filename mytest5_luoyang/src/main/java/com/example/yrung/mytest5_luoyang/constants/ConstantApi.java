@@ -39,6 +39,8 @@ public class ConstantApi {
     public static final String ROUTER_MODULE_PROJECT_INTERCEPT = "/module/eirunye/project/intercept";
 
 
+    //共同页面
+    public static final String ROUTER_MODULE_COMMENT_PAGE = "/module/eirunye/project/test5";
     //页面的名称
 
     public static final String ROUTER_TEST_1_NAME = "测试TEST";

@@ -20,7 +20,8 @@
         <activity android:name=".mvp.ModuleParameterActivity" />
         <activity android:name=".mvp.InterceptorActivity" />
         <activity android:name=".base.BaseActivity" />
-        <activity android:name=".mvp.DetailsActivity"></activity>
+        <activity android:name=".mvp.DetailsActivity" />
+        <activity android:name=".Test5Activity"></activity>
     </application>
 
 </manifest>
