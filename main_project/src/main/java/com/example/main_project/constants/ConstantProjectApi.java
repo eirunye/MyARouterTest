@@ -20,7 +20,7 @@ public class ConstantProjectApi {
 
 
     //拦截器
-    public static final String ROUTER_MODULE_PROJECT_INTERCEPROT = "/module/eirunye/project/intercept";
+    public static final String ROUTER_MODULE_PROJECT_INTERCEPT = "/module/eirunye/project/intercept";
 
 
     //详情页面

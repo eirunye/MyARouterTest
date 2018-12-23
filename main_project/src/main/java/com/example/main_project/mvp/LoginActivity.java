@@ -74,6 +74,7 @@ public class LoginActivity extends AppCompatActivity {
             user.setPassword(pass);
             user.setLogin(true);
             SharedPreferencesUtil.putData("Login", user);
+            LoginActivity.this.finish();
         } else {
             Toast.makeText(LoginActivity.this, "登录失败!", Toast.LENGTH_LONG).show();
         }

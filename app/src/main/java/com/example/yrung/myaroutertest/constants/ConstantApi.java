@@ -20,6 +20,8 @@ public class ConstantApi {
 
     public static final String ROUTER_SERVICE_HELLO_1 = "/app/eirunye/app/service_1";
 
+    public static final String ROUTER_FRAGMENT_TEST_1 = "/app/eirunye/app/myfragment_1";
+
     //跳转到Module
     public static final String ROUTER_MODULE_PROJECT = "/module/eirunye/project/main";
 
@@ -34,7 +36,7 @@ public class ConstantApi {
     public static final String ROUTER_MODULE_PROJECT_LOGIN = "/module/eirunye/project/login";
 
     //拦截器
-    public static final String ROUTER_MODULE_PROJECT_INTERCEPRTOT = "/module/eirunye/project/intercept";
+    public static final String ROUTER_MODULE_PROJECT_INTERCEPT = "/module/eirunye/project/intercept";
 
 
     //页面的名称

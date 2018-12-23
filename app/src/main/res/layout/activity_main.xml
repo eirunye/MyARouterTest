@@ -74,13 +74,13 @@
                 android:id="@+id/button10"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="跳转1_URL" />
+                android:text="SingleService" />
 
             <Button
                 android:id="@+id/button11"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="跳转1_URL" />
+                android:text="跳转1_Fragment" />
         </LinearLayout>
     </ScrollView>
 

@@ -3,6 +3,7 @@ package com.example.yrung.myaroutertest.interceptor;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 
 import com.alibaba.android.arouter.facade.Postcard;
 import com.alibaba.android.arouter.facade.annotation.Interceptor;
@@ -23,10 +24,14 @@ import com.example.yrung.myaroutertest.other.MainLooper;
 
 @Interceptor(priority = 1)
 public class LoginInterceptor implements IInterceptor {
+
+    public static final String TAG = LoginInterceptor.class.getSimpleName();
+
     @Override
     public void process(Postcard postcard, InterceptorCallback callback) {
-        if (ConstantApi.ROUTER_MODULE_PROJECT_DETAIL.equals(postcard.getPath())) {
 
+        Log.e(TAG, "=====>" + postcard.getPath());
+        if (ConstantApi.ROUTER_MODULE_PROJECT_DETAIL.equals(postcard.getPath())) {
             User user = (User) SharedPreferencesUtil.getData("Login", new User());
             if (!user.isLogin()) {
                 final AlertDialog.Builder ab = new AlertDialog.Builder(MainActivity.getThis());
@@ -36,8 +41,8 @@ public class LoginInterceptor implements IInterceptor {
                 ab.setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-//                        callback.onContinue(postcard);  // 处理完成，交还控制权
-                        callback.onInterrupt(new RuntimeException("我觉得有点异常"));      // 觉得有问题，中断路由流程
+                        callback.onInterrupt(null);  // 处理完成，交还控制权
+//                        callback.onInterrupt(new RuntimeException("我觉得有点异常"));      // 觉得有问题，中断路由流程
                     }
                 });
 
@@ -47,7 +52,7 @@ public class LoginInterceptor implements IInterceptor {
 
                         ARouter.getInstance().build(ConstantApi.ROUTER_MODULE_PROJECT_LOGIN).navigation();
 
-                        callback.onContinue(postcard);
+//                        callback.onContinue(postcard);
                     }
                 });
 
@@ -57,6 +62,8 @@ public class LoginInterceptor implements IInterceptor {
                         ab.create().show();
                     }
                 });
+            } else {
+                callback.onContinue(postcard);
             }
 
         } else {
