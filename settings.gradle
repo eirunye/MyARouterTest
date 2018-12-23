@@ -1,1 +1,1 @@
-include ':app', ':main_project', ':mytest2', ':mytest3',':mytest4'
+include ':app', ':main_project', ':mytest2', ':mytest3', ':mytest4', ':mytest5_luoyang'

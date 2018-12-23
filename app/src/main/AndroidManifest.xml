@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.yrung.myaroutertest">
+    package="com.example.yrung.mytest5_luoyang">
 
     <application
-        android:name=".app.MyApplication"
+        android:name="com.example.yrung.mytest5_luoyang.app.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.yrung.mytest5_luoyang.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Test1Activity" />
-        <activity android:name=".ParameterActivity" />
-        <activity android:name=".mvp.WebViewActivity" />
-        <activity android:name=".Test4Activity" />
-        <activity android:name=".mvp.LoginActivity"></activity>
+        <activity android:name="com.example.yrung.mytest5_luoyang.Test1Activity" />
+        <activity android:name="com.example.yrung.mytest5_luoyang.ParameterActivity" />
+        <activity android:name="com.example.yrung.mytest5_luoyang.mvp.WebViewActivity" />
+        <activity android:name="com.example.yrung.mytest5_luoyang.Test4Activity" />
+        <activity android:name="com.example.yrung.mytest5_luoyang.mvp.LoginActivity"></activity>
     </application>
 
 </manifest>
